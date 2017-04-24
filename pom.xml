@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>jp.fieldnotes.jjug</groupId>
+    <artifactId>pact-jvm-example</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <build>
+        <defaultGoal>validate</defaultGoal>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                        <encoding>UTF-8</encoding>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <!--
+           <plugin>
+             <artifactId>maven-javadoc-plugin</artifactId>
+             <executions>
+               <execution>
+                 <id>javadoc-jar</id>
+                 <phase>package</phase>
+                 <goals>
+                   <goal>jar</goal>
+                 </goals>
+               </execution>
+             </executions>
+             <configuration>
+               <charset>UTF-8</charset>
+             </configuration>
+           </plugin>
+           -->
+
+        </plugins>
+    </build>
+    <modules>
+        <module>pact-jvm-example-consumer</module>
+        <module>pact-jvm-example-provider</module>
+    </modules>
+
+</project>

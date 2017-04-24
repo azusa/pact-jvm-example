@@ -1,0 +1,1 @@
+INSERT INTO animals (id, type,  name) VALUES (1, 'serval','サーバルちゃん');
